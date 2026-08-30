@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-heading: 'Manrope', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  --color-clea-50: #effcfe;
+  --color-clea-100: #dbf7fb;
+  --color-clea-200: #b3eef6;
+  --color-clea-300: #7de1f0;
+  --color-clea-400: #41d4e4;
+  --color-clea-500: #10bfc7;
+  --color-clea-600: #0e9ca6;
+  --color-clea-700: #0c7d85;
+  --color-clea-800: #0a6369;
+  --color-clea-900: #0a5055;
+  --color-clea-950: #043036;
+
+  --color-cleagreen-50: #f3fbf0;
+  --color-cleagreen-100: #e4f7dc;
+  --color-cleagreen-200: #c9edb6;
+  --color-cleagreen-300: #a6df8a;
+  --color-cleagreen-400: #7ed05b;
+  --color-cleagreen-500: #6bcf45;
+  --color-cleagreen-600: #4fa731;
+  --color-cleagreen-700: #3b8127;
+  --color-cleagreen-800: #2c6220;
+  --color-cleagreen-900: #23491a;
+  --color-cleagreen-950: #122b0d;
+
+  --color-cleaorange-50: #fff7ec;
+  --color-cleaorange-100: #ffebd3;
+  --color-cleaorange-200: #ffd6a6;
+  --color-cleaorange-300: #ffbb70;
+  --color-cleaorange-400: #ffa03f;
+  --color-cleaorange-500: #ff8a1f;
+  --color-cleaorange-600: #e46f13;
+  --color-cleaorange-700: #b35b0e;
+  --color-cleaorange-800: #7f400b;
+  --color-cleaorange-900: #5e3009;
+  --color-cleaorange-950: #331904;
+
+  --color-cleayellow-50: #fffde8;
+  --color-cleayellow-100: #fff9c4;
+  --color-cleayellow-200: #fff188;
+  --color-cleayellow-300: #ffe74e;
+  --color-cleayellow-400: #ffde36;
+  --color-cleayellow-500: #ffd52e;
+  --color-cleayellow-600: #e6bc14;
+  --color-cleayellow-700: #b88c0b;
+  --color-cleayellow-800: #8a6508;
+  --color-cleayellow-900: #6b4f07;
+  --color-cleayellow-950: #3b2a03;
+
+  --color-cleaearth-50: #fbf5f0;
+  --color-cleaearth-100: #f5e7dc;
+  --color-cleaearth-200: #ead0bb;
+  --color-cleaearth-300: #d8b294;
+  --color-cleaearth-400: #b98c6c;
+  --color-cleaearth-500: #7a4e35;
+  --color-cleaearth-600: #6a422d;
+  --color-cleaearth-700: #573725;
+  --color-cleaearth-800: #3d2618;
+  --color-cleaearth-900: #2c1b11;
+  --color-cleaearth-950: #1c110b;
+
+  --color-cleaneutral-50: #fffcf7;
+  --color-cleaneutral-100: #f8f2e9;
+  --color-cleaneutral-200: #ece2d3;
+  --color-cleaneutral-300: #ddd0bc;
+  --color-cleaneutral-400: #b7a48a;
+  --color-cleaneutral-500: #83715a;
+  --color-cleaneutral-600: #6b5a46;
+  --color-cleaneutral-700: #4c4034;
+  --color-cleaneutral-800: #342c24;
+  --color-cleaneutral-900: #26211b;
+  --color-cleaneutral-950: #14110d;
+}
+
+:root {
+  --ui-bg: var(--color-cleaneutral-50);
+  --ui-bg-muted: var(--color-cleaneutral-100);
+  --ui-bg-elevated: var(--color-cleaneutral-100);
+  --ui-bg-accented: var(--color-cleaneutral-200);
+  --ui-bg-inverted: var(--color-cleaneutral-900);
+
+  --ui-border: var(--color-cleaneutral-300);
+  --ui-border-muted: var(--color-cleaneutral-200);
+  --ui-border-accented: var(--color-cleaneutral-300);
+  --ui-border-inverted: var(--color-cleaneutral-900);
+
+  --ui-primary: var(--color-clea-700);
+  --ui-secondary: var(--color-cleagreen-700);
+  --ui-accent: var(--color-cleaorange-700);
+  --ui-highlight: var(--color-cleayellow-500);
+  --ui-earth: var(--color-cleaearth-500);
+
+  --ui-radius: 0.5rem;
+}
+
+.dark {
+  --ui-bg: var(--color-cleaneutral-950);
+  --ui-bg-muted: var(--color-cleaneutral-900);
+  --ui-bg-elevated: var(--color-cleaneutral-900);
+  --ui-bg-accented: var(--color-cleaneutral-800);
+  --ui-bg-inverted: var(--color-cleaneutral-50);
+
+  --ui-border: var(--color-cleaneutral-800);
+  --ui-border-muted: var(--color-cleaneutral-700);
+  --ui-border-accented: var(--color-cleaneutral-700);
+  --ui-border-inverted: var(--color-cleaneutral-50);
+
+  --ui-primary: var(--color-clea-400);
+  --ui-secondary: var(--color-cleagreen-400);
+  --ui-accent: var(--color-cleaorange-400);
+  --ui-highlight: var(--color-cleayellow-400);
+  --ui-earth: var(--color-cleaearth-400);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :where(a, button, input, select, textarea, summary, [role='button']):focus-visible {
+    outline: 2px solid color-mix(in oklab, var(--ui-primary) 25%, transparent);
+    outline-offset: 2px;
+  }
+}

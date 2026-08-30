@@ -835,6 +835,17 @@ Le design system doit centraliser notamment :
 
 Les composants doivent éviter de recréer chacun leur propre style.
 
+## Socle UI (implémenté)
+
+Le socle UI frontend est configuré avec **Nuxt UI v4** et **Tailwind CSS v4** (thème CSS-first) :
+
+- **Palettes de marque** définies dans `app/assets/css/main.css` (turquoise `clea`, vert `cleagreen`, orange `cleaorange`, jaune `cleayellow`, terre `cleaearth`, neutre chaud `cleaneutral`).
+- **Aliases sémantiques** mappés dans `app/app.config.ts` (`primary`, `secondary`, `accent`, `highlight`, `earth`, `neutral`) — les composants les utilisent au lieu des palettes brutes.
+- **Typographie** : Manrope (auto-chargée par `@nuxt/fonts`), via `--font-sans` / `--font-heading`.
+- **Accessibilité** : les alias `primary`, `secondary` et `accent` basculent vers des nuances foncées en mode clair pour un contraste ≥ 4.5:1. Le mode sombre est activable via `UColorModeButton` et reste un fallback léger (`colorMode.preference: 'light'`).
+- **Page de référence** : `/design-system` présente couleurs, typographie et composants disponibles.
+- **Qualité** : `pnpm lint`, `pnpm typecheck` et `pnpm build` doivent passer avant fusion.
+
 ---
 
 # Formulaires et validation
