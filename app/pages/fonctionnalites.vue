@@ -49,7 +49,7 @@ const detailSections = [
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="Fonctionnalités"
       title="Des outils simples pour mieux vivre ton cycle."
       description="CLEA regroupe l’essentiel : suivi du cycle, ressentis quotidiens, prédictions indicatives et accompagnement, le tout dans une interface claire et apaisante."
@@ -82,7 +82,7 @@ const detailSections = [
         </div>
 
         <div class="mt-16">
-          <SectionHeading
+          <SharedSectionHeading
             eyebrow="En détail"
             title="Pourquoi c’est fait pour toi."
             align="center"

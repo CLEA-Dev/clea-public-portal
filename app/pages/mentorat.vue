@@ -46,7 +46,7 @@ const steps = [
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="Mentorat"
       title="Un accompagnement humain, entre femmes."
       description="Au-delà du suivi du cycle, CLEA veut mettre en relation des femmes avec des accompagnatrices et femmes leaders, pour un suivi fondé sur l’écoute et la confiance."
@@ -77,7 +77,7 @@ const steps = [
 
         <div class="mt-20 grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
           <div>
-            <SectionHeading
+            <SharedSectionHeading
               eyebrow="Comment ça se passe"
               title="Trois étapes simples."
               description="Quelques mots clairs pour démarrer : il n’y a rien de compliqué."

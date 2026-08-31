@@ -8,7 +8,7 @@ useSeoMeta({
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="Légal"
       title="Conditions d’utilisation."
       description="CLEA est un espace d’information et de bien-être. Ces conditions rappellent les règles simples de son utilisation."

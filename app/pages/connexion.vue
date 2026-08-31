@@ -52,6 +52,7 @@ function handleSubmit() {
                 type="email"
                 placeholder="toi@exemple.com"
                 autocomplete="email"
+                class="w-full"
               />
             </UFormField>
 
@@ -64,6 +65,7 @@ function handleSubmit() {
                 type="tel"
                 placeholder="ex. : +243 …"
                 autocomplete="tel"
+                class="w-full"
               />
             </UFormField>
 
@@ -76,6 +78,7 @@ function handleSubmit() {
                 type="password"
                 placeholder="••••••••"
                 autocomplete="current-password"
+                class="w-full"
               />
             </UFormField>
 

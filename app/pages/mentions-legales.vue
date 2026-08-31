@@ -8,7 +8,7 @@ useSeoMeta({
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="Légal"
       title="Mentions légales."
       description="Les informations légales relatives au site et à l’application CLEA seront complétées lors du lancement officiel."

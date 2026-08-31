@@ -33,19 +33,12 @@ function handleSubmit() {
   }, 500);
 }
 
-function handleWhatsAppComingSoon() {
-  toast.add({
-    title: 'Bientôt disponible',
-    description: 'Le numéro WhatsApp sera publié dès l’ouverture du service.',
-    color: 'secondary',
-    icon: 'i-lucide-clock',
-  });
-}
+const whatsappUrl = 'https://wa.me/243973042972';
 </script>
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="Contact"
       title="Parlons-en."
       description="Une question, une suggestion, une demande d’accompagnement ? Écris-nous, nous te répondrons avec plaisir."
@@ -75,6 +68,7 @@ function handleWhatsAppComingSoon() {
                   v-model="name"
                   placeholder="Ton prénom"
                   autocomplete="name"
+                  class="w-full"
                 />
               </UFormField>
 
@@ -87,6 +81,7 @@ function handleWhatsAppComingSoon() {
                   type="tel"
                   placeholder="ex. : +243 …"
                   autocomplete="tel"
+                  class="w-full"
                 />
               </UFormField>
 
@@ -97,6 +92,7 @@ function handleWhatsAppComingSoon() {
                 <USelect
                   v-model="reason"
                   :items="reasons"
+                  class="w-full"
                 />
               </UFormField>
 
@@ -108,6 +104,7 @@ function handleWhatsAppComingSoon() {
                   v-model="message"
                   :rows="5"
                   placeholder="Dis-nous tout…"
+                  class="w-full"
                 />
               </UFormField>
 
@@ -134,15 +131,16 @@ function handleWhatsAppComingSoon() {
                 WhatsApp
               </h2>
               <p class="mt-2 text-sm leading-relaxed text-muted">
-                Le plus rapide : dès l’ouverture du service, tu pourras écrire directement à une membre
-                de l’équipe.
+                Le plus rapide : écris-nous directement sur WhatsApp, nous te répondrons avec plaisir.
               </p>
               <UButton
                 class="mt-4 rounded-full"
                 color="secondary"
                 label="Écrire sur WhatsApp"
                 leading-icon="i-lucide-message-circle"
-                @click="handleWhatsAppComingSoon"
+                :to="whatsappUrl"
+                :external="true"
+                target="_blank"
               />
             </div>
 

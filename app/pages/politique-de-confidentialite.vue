@@ -8,7 +8,7 @@ useSeoMeta({
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="Légal"
       title="Politique de confidentialité."
       description="Tes données personnelles te concernent : voici comment CLEA les traite, avec transparence et prudence. Cette politique sera précisée lors du lancement."

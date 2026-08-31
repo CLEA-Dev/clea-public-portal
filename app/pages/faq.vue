@@ -90,7 +90,7 @@ const faqGroups = [
 
 <template>
   <main>
-    <PageHeader
+    <SharedPageHeader
       eyebrow="FAQ"
       title="Tes questions, nos réponses."
       description="Si tu ne trouves pas ta réponse ici, contacte-nous : nous te répondrons volontiers."
