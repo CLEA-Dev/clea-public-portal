@@ -14,7 +14,7 @@ const legal = [
 ];
 
 const config = useRuntimeConfig();
-const downloadUrl = config.public.appDownloadUrl ?? '';
+const downloadUrl = config.public.app?.android?.downloadUrl ?? '';
 </script>
 
 <template>
@@ -55,21 +55,18 @@ const downloadUrl = config.public.appDownloadUrl ?? '';
         </p>
         <ul class="mt-4 space-y-2.5">
           <li>
-            <nuxt-link
+            <ULink
               v-if="downloadUrl"
-              :to="downloadUrl"
-              external
-              target="_blank"
-              rel="noopener noreferrer"
+              :to="'/telecharger'"
               class="text-sm text-inverted/80 transition-colors hover:text-inverted"
             >
-              Android
-            </nuxt-link>
+              Télécharger l’application
+            </ULink>
             <p
               v-else
               class="inline-flex items-center gap-2 text-sm text-inverted/60"
             >
-              Android
+              Télécharger l’application
               <UBadge
                 label="Bientôt"
                 variant="soft"

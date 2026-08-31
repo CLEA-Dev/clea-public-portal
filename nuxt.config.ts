@@ -29,7 +29,11 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      appDownloadUrl: '',
+      app: {
+        android: {
+          downloadUrl: 'https://drive.google.com/file/d/1YfT5Vwl4s42e9ONYRBKDdBQHO6MO7KdU/view?usp=sharing',
+        },
+      },
     },
   },
   compatibilityDate: '2025-07-15',

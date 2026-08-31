@@ -4,6 +4,7 @@ const links = [
   { label: 'Fonctionnalités', to: '/fonctionnalites' },
   { label: 'Mentorat', to: '/mentorat' },
   { label: 'À propos', to: '/a-propos' },
+  { label: 'Télécharger', to: '/telecharger' },
 ];
 
 const secondaryLinks = [

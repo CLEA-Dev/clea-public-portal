@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const config = useRuntimeConfig();
-const downloadUrl = config.public.appDownloadUrl ?? '';
 </script>
 
 <template>
@@ -94,29 +92,17 @@ const downloadUrl = config.public.appDownloadUrl ?? '';
 
           <div class="mt-8 flex flex-wrap items-center gap-4">
             <UButton
-              v-if="downloadUrl"
-              :to="downloadUrl"
-              external
-              target="_blank"
-              rel="noopener noreferrer"
+              to="/telecharger"
               size="lg"
-              label="Télécharger sur Android"
+              label="Télécharger l'application"
               trailing-icon="i-lucide-download"
-              class="rounded-full"
-            />
-            <UBadge
-              v-else
-              label="Bientôt sur Google Play"
-              variant="soft"
-              color="secondary"
-              size="lg"
               class="rounded-full"
             />
           </div>
 
           <p class="mt-4 text-sm text-muted">
-            La version Android de CLEA est en cours de préparation. La page de
-            téléchargement sera reliée dès la mise en ligne.
+            CLEA est disponible en version Android : découvre la page de téléchargement pour
+            installer l’APK sur ton téléphone.
           </p>
         </div>
       </div>
