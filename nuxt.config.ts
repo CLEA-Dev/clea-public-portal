@@ -26,6 +26,12 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  runtimeConfig: {
+    public: {
+      appDownloadUrl: '',
+    },
+  },
   compatibilityDate: '2025-07-15',
 
   eslint: {

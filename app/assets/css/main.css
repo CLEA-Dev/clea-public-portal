@@ -77,6 +77,19 @@
   --color-cleaneutral-800: #342c24;
   --color-cleaneutral-900: #26211b;
   --color-cleaneutral-950: #14110d;
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-delayed: float 8s ease-in-out 1.4s infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
 }
 
 :root {
@@ -128,5 +141,15 @@
   :where(a, button, input, select, textarea, summary, [role='button']):focus-visible {
     outline: 2px solid color-mix(in oklab, var(--ui-primary) 25%, transparent);
     outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--ui-primary) 25%, transparent);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }
