@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     public: {
       app: {
         android: {
-          downloadUrl: 'https://drive.google.com/file/d/1YfT5Vwl4s42e9ONYRBKDdBQHO6MO7KdU/view?usp=sharing',
+          downloadUrl: 'https://drive.google.com/file/d/1v3OIqLO5j3z4U8QOxdOFmtbW8jPMHJ7h/view?usp=sharing',
         },
       },
     },
